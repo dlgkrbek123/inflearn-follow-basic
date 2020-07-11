@@ -1,0 +1,17 @@
+client
+  브라우져처럼 서버에 요청을 하는 객체
+
+server
+  요청을 받아 처리하고 응답을 주는 프로그램, 컴퓨터
+
+body에 데이터가 담겨서 보내어진다.
+body parser를 이용해서 파싱해야 함
+
+npm install body-parser
+
+
+nodemon을 이용해서 개발할 때 HMR을 해준다.
+
+npm install nodemon --save-dev
+
+nodemon index.js

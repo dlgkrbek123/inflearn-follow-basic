@@ -1,0 +1,9 @@
+js를 브라우져 외에서도 사용하게 됨
+서버사이드에서도 사용 가능
+
+express는 nodejs web framework
+
+npm init
+  package.json 만들어 줌
+
+node_modules에 라이브러리가 다운된다.

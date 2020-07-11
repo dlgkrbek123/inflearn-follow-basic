@@ -1,0 +1,22 @@
+유저랑 관련된 데이터를 보관해보자!
+
+Model이란?
+  스키마를 감싸는 역할
+
+Schema?
+  데이터의 도식도
+
+
+const productSchema = mongoose.Schema({
+  writer: {
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  },
+  title: {
+    type: String,
+    maxlength: 50
+  },
+  description: {
+    type: string
+  }
+}, { timestamps: true })

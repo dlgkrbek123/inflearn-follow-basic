@@ -1,0 +1,8 @@
+몽고 db 클러스터
+유저 생성 ( username, password 는 저장)
+connection string을 copy
+
+몽구스란?
+  몽고 db를 편하게 쓰게 해줌
+
+npm install mongoose
