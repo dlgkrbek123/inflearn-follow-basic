@@ -1,0 +1,7 @@
+Bcrypt로 비밀번호를 암호화
+  비밀번호가 평문으로 db에 들어가면 조금 그래...
+  클라이언트가 평문을 보내도 저장은 암호문으로 저장하자
+
+npm install bcrypt
+npm install jsonwebtoken
+npm install cookie-parser
