@@ -89,6 +89,21 @@ userSchema.methods.generateToken = function (cb) {
   // token - secretToken => user._id 누구인지 식별 가능
 };
 
+userSchema.statics.findByToken = function (token, cb) {
+  var user = this;
+
+  jwt.verify(token, "secretToken", function (err, decode) {
+    // 유저 아이디를 이용해서 유저를 찾고
+    // 클라이언트에서 가져온 토큰과 db에 보관된 토큰이 일치하는지 확인
+
+    user.findOne({ _id: decode, token }, function (err, user) {
+      if (err) return cb(err);
+
+      cb(null, user);
+    });
+  });
+};
+
 // model이 스키마를 감싼다.
 const User = mongoose.model("User", userSchema);
 
