@@ -1,0 +1,37 @@
+예측가능한 state container
+state란?
+
+props
+  프로퍼티의 줄임말
+  부모 컴포넌트로부터 내려받는 것
+  컴포넌트간 상호작용에 사용
+  immutable
+
+state
+  해당 컴포넌트 내부에서의 data
+  mutable
+  변하면 해당 컴포넌트가 리렌더
+
+redux가 없으면 컴포넌트가 상호작용이 props를
+타고 엄청 복잡해진다.
+
+단일 store에 정보를 다 담고 이것을 mutate시키자
+
+
+단방향 데이터 흐름
+  action은 store를 mutate를 시키는 객체
+  reducer가 action을 받아들여 다음 state를 리턴하는 함수
+  reducer가 리턴한 다음 state를 채용해서 구독한 컴포넌트의
+  리렌더를 발생시킴
+
+reducer는 순수함수이기를 기대된다.
+
+
+미들웨어로 리덕스를 쉽게 쓰자.
+action을 쉽게 dispatch하게 해준다.
+
+redux-thunk로 함수를 dispatch하게 함
+redux-promise로 promis를 어떻게 dispatch
+
+
+복수의 리듀서를 combine해서 하나의 store를 구성
