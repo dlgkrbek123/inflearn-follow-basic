@@ -1,7 +1,7 @@
 import React from "react";
 
 const LandingPage = () => {
-  return <div>대준식</div>;
+  return <div>등록</div>;
 };
 
 export default LandingPage;
